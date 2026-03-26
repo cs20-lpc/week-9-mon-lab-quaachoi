@@ -67,7 +67,7 @@ void LinkedQueue<T>::dequeue() {
     // TODO
     if (isEmpty()) 
     {
-        return
+        return;
     }
 
     Node* temp = head;

@@ -65,6 +65,11 @@ void LinkedQueue<T>::copy(const LinkedQueue<T>& copyObj) {
 template <typename T>
 void LinkedQueue<T>::dequeue() {
     // TODO
+    if (isEmpty()) 
+    {
+        return
+    }
+
     Node* temp = head;
     head = head->next;
     delete temp;
